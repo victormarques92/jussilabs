@@ -1,0 +1,55 @@
+@import '../../assets/scss/variables';
+
+.result {
+	padding: 40px 0;
+
+	.title {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+		margin-bottom: 32px;
+	}
+
+	.product {
+		border: 1px solid map-get($colors, 'grey');
+		border-radius: 4px;
+		margin-bottom: 20px;
+		padding: 8px;
+		width: 100%;
+
+		.image {
+			border-radius: 4px;
+			height: 100px;
+			margin-bottom: 12px;
+			overflow: hidden;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.name {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			margin-bottom: 16px;
+		}
+
+		&:hover {
+			.image {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	.col-3 {
+		padding-left: 0;
+	}
+
+	.error {
+		color: map-get($colors, 'dark-grey');
+	}
+}

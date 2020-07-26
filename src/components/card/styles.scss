@@ -1,0 +1,50 @@
+@import '../../assets/scss/variables';
+
+.card {
+	border: 1px solid map-get($colors, 'grey');
+	border-radius: 4px;
+	padding: 16px;
+	width: 100%;
+
+	.appearance {
+		align-items: center;
+		background-color: map-get($colors, 'grey');
+		border-radius: 50%;
+		display: flex;
+		font-size: 32px;
+		font-weight: 500;
+		height: 100px;
+		justify-content: center;
+		line-height: 38px;
+		margin-bottom: 53px;
+		text-transform: uppercase;
+		width: 100px;
+	}
+
+	.name {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 16px;
+	}
+
+	.description {
+		color: map-get($colors, 'secondary');
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+		margin-bottom: 16px;
+	}
+
+	.list {
+		margin-bottom: 16px;
+
+		.item {
+			color: map-get($colors, 'dark-grey');
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 18px;
+			margin-bottom: 2px;
+		}
+	}
+}

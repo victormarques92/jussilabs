@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	border: 0;
+	box-sizing: border-box;
+	color: map-get($colors, 'black');
+	font-family: 'Barlow',
+	sans-serif;
+	margin: 0;
+	outline: none !important;
+	padding: 0;
+	transition: .5s ease-in-out;
+}
+
+body,
+html {
+	background-color: map-get($colors, 'white');
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+textarea {
+	resize: none;
+}

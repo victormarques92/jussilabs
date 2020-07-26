@@ -1,0 +1,41 @@
+@import '../../assets/scss/variables';
+
+.the-jussi {
+	overflow: hidden;
+	padding: 64px 0;
+	position: relative;
+
+	&::after {
+		background-color: map-get($colors, 'grey');
+		content: '';
+		height: 100%;
+		left: 50vw;
+		position: absolute;
+		top: 0;
+		width: 50vw;
+	}
+
+	.title {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 40px;
+		margin-bottom: 24px;
+		text-transform: uppercase;
+	}
+
+	.text {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 24px;
+	}
+
+	.box-img {
+		padding-left: 107px;
+		z-index: 1;
+
+		.img-jussi {
+			max-width: 100%;
+		}
+	}
+}

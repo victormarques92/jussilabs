@@ -1,0 +1,33 @@
+@import '../../assets/scss/variables';
+
+.newsletter {
+	background-color: map-get($colors, 'black');
+	padding: 136px 0;
+
+	.title {
+		color: map-get($colors, 'white');
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 40px;
+		margin: 0 auto;
+		margin-bottom: 24px;
+		max-width: 676px;
+		padding: 0 70px;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+
+		&::before {
+			color: map-get($colors, 'primary');
+			content: '//';
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.email-news {
+		margin: 0 auto;
+		max-width: 502px;
+	}
+}

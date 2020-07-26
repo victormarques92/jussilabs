@@ -1,0 +1,85 @@
+@import '../../assets/scss/variables';
+
+.hero {
+	background-color: map-get($colors, 'primary');
+	padding: 40px 0;
+
+	.title {
+		font-size: 64px;
+		font-weight: 500;
+		line-height: 77px;
+		margin-bottom: 16px;
+		position: relative;
+		text-transform: uppercase;
+
+		&::before {
+			content: '//';
+			color: map-get($colors, 'white');
+			left: -98px;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.text {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 32px;
+	}
+
+	&-products {
+		position: relative;
+		height: 100%;
+		width: 460px;
+
+		.product {
+			background-color: map-get($colors, 'white');
+			border: 1px solid map-get($colors, 'grey');
+			border-radius: 8px;
+			box-shadow: 0px 32px 32px rgba(0, 0, 0, .25);
+			display: flex;
+			flex-direction: column;
+			height: 271px;
+			justify-content: space-between;
+			padding: 16px;
+			position: absolute;
+			width: 212px;
+
+			.image {
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+			}
+
+			.btn {
+				background-color: transparent;
+				border: 1px solid map-get($colors, 'secondary');
+				border-radius: 24px;
+				color: map-get($colors, 'secondary');
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				padding: 12px 24px;
+				width: auto;
+			}
+
+			&:nth-child(1) {
+				left: calc(50% - 106px);
+				top: 0;
+				z-index: 10;
+			}
+
+			&:nth-child(2) {
+				left: 0;
+				bottom: 42px;
+			}
+
+			&:nth-child(3) {
+				bottom: 0;
+				right: 0;
+			}
+		}
+	}
+}

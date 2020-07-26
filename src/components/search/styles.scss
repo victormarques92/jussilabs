@@ -1,0 +1,30 @@
+@import '../../assets/scss/variables';
+
+.search {
+	align-items: center;
+	border: 1px solid map-get($colors, 'grey');
+	border-radius: 24px;
+	display: flex;
+	height: 40px;
+	overflow: hidden;
+	padding: 0 16px;
+	width: 240px;
+
+	.input {
+		font-size: 16px;
+		height: 100%;
+		line-height: 24px;
+
+		&::placeholder {
+			color: map-get($colors, 'secondary');
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+		}
+	}
+
+	.btn {
+		background-color: transparent;
+		cursor: pointer;
+	}
+}

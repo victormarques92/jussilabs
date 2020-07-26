@@ -1,0 +1,41 @@
+@import '../../assets/scss/variables';
+
+.nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 24px;
+
+	&-left {
+		align-items: center;
+		display: flex;
+
+		.menu {
+			align-items: center;
+			display: flex;
+			margin-left: 32px;
+
+			.item {
+				cursor: pointer;
+				margin-right: 32px;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	&-right {
+		align-items: center;
+		display: flex;
+
+		.item {
+			margin-right: 32px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}

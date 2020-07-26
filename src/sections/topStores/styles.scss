@@ -1,0 +1,23 @@
+@import '../../assets/scss/variables';
+
+.top-stores {
+	background-color: map-get($colors, 'grey');
+	padding: 27px 0;
+
+	.list-data {
+		align-items: center;
+		display: flex;
+
+		.item {
+			margin-right: 48px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			img {
+				max-height: 25px;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import '../../assets/scss/variables';
+
+.box-input {
+	align-items: center;
+	display: flex;
+	border-bottom: 1px solid map-get($colors, 'primary');
+
+	.input {
+		background-color: transparent;
+		caret-color: map-get($colors, 'primary');
+		color: map-get($colors, 'white');
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		padding: 18px 18px 18px 0;
+		width: 100%;
+
+		&::placeholder {
+			color: map-get($colors, 'white');
+		}
+	}
+
+	.btn {
+		background-color: transparent;
+		color: map-get($colors, 'primary');
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 40px;
+	}
+}
